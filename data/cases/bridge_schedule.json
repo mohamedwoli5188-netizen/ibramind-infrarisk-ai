@@ -1,0 +1,9 @@
+{
+  "project_name": "Synthetic Bridge Rehabilitation Package",
+  "project_context": "Rehabilitation with constrained access and QA hold points. Synthetic data only.",
+  "evidence": [
+    {"id": "B-001", "type": "site_diary", "text": "Scaffolding access to Pier 2 is delayed by four days because the access platform has not been released."},
+    {"id": "B-002", "type": "programme", "text": "Pier 2 concrete repair has three days total float and precedes bearing replacement on the current critical path sequence."},
+    {"id": "B-003", "type": "qa_qc", "text": "Surface-preparation inspection failed at Pier 2; reinspection is required before repair mortar placement can start."}
+  ]
+}

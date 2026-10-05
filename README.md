@@ -22,7 +22,7 @@ Copy `.env.example` to `.env` and provide your own credentials.
 ```bash
 NEBIUS_API_KEY=
 NEBIUS_BASE_URL=https://api.tokenfactory.nebius.com/v1/
-NVIDIA_MODEL=nvidia/Nemotron-3_5-Lightning
+NVIDIA_MODEL=<verified NVIDIA/Nemotron model ID returned by /v1/models>
 ```
 
 ## Run locally
@@ -55,12 +55,21 @@ Public hackathon build in progress. The repository will be updated with the fina
 MIT
 
 
-## NVIDIA model selected
+## NVIDIA model selection
 
-The hackathon build targets `nvidia/Nemotron-3_5-Lightning` through Nebius Token Factory's OpenAI-compatible endpoint. This model was selected for the first live evaluation because Nebius currently exposes it as a public Nemotron endpoint suited to efficient reasoning/coding-style tasks. The final Devpost quality ratings will be based only on measured hackathon runs, not assumptions.
+The live benchmark script queries the Nebius Token Factory /v1/models endpoint, prints NVIDIA/Nemotron candidates, and verifies the selected model ID before any benchmark is recorded. This avoids claiming a model that is not actually available to the account. Final Devpost quality ratings are based only on measured live runs.
 
 ## API endpoint
 
 `https://api.tokenfactory.nebius.com/v1/`
 
 The API key is intentionally excluded from source control.
+
+
+## Reproducible live benchmark
+
+After configuring NEBIUS_API_KEY, run: python scripts/benchmark.py
+
+The script discovers eligible NVIDIA/Nemotron models from the live Nebius API, runs three synthetic infrastructure cases, validates evidence citations and structured output, records latency/token usage, and writes artifacts/benchmark.json.
+
+The benchmark intentionally does not claim independent engineering correctness; it measures observable runtime and provenance properties that judges can reproduce.

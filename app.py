@@ -61,7 +61,7 @@ def get_client() -> OpenAI:
 def health() -> Dict[str, Any]:
     return {
         "status": "ok",
-        "nebius_configured": bool(os.getenv("NEBIUS_API_KEY") and os.getenv("NEBIUS_BASE_URL")),
+        "nebius_configured": bool(os.getenv("NEBIUS_API_KEY")),
         "model": os.getenv("NVIDIA_MODEL", "not-configured"),
     }
 

@@ -1,0 +1,9 @@
+{
+  "project_name": "Synthetic Water Treatment Structure",
+  "project_context": "Reinforced-concrete works with excavation and formwork activities. Synthetic data only.",
+  "evidence": [
+    {"id": "S-001", "type": "hse", "text": "Excavation edge protection was incomplete during the afternoon inspection and the access ladder was not secured."},
+    {"id": "S-002", "type": "qa_qc", "text": "Wall reinforcement inspection remains open because bar spacing at one zone differs from the approved drawing."},
+    {"id": "S-003", "type": "programme", "text": "Concrete pour is scheduled for tomorrow morning and the approved inspection release is a predecessor to the pour."}
+  ]
+}

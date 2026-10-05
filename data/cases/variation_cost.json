@@ -1,0 +1,9 @@
+{
+  "project_name": "Synthetic Municipal Building Fit-out",
+  "project_context": "Fixed-duration fit-out package with controlled variations. Synthetic data only.",
+  "evidence": [
+    {"id": "V-001", "type": "site_instruction", "text": "The consultant instructed replacement of the specified ceiling system with an acoustic system not included in the priced BOQ."},
+    {"id": "V-002", "type": "commercial", "text": "No agreed variation rate or approved quotation is recorded for the acoustic ceiling as of this reporting date."},
+    {"id": "V-003", "type": "progress", "text": "The subcontractor plans to commence ceiling installation in five days to maintain the current handover date."}
+  ]
+}
