@@ -48,7 +48,7 @@ If evidence is insufficient, say so explicitly and lower confidence.
 
 def get_client() -> OpenAI:
     api_key = os.getenv("NEBIUS_API_KEY")
-    base_url = os.getenv("NEBIUS_BASE_URL")
+    base_url = os.getenv("NEBIUS_BASE_URL", "https://api.tokenfactory.nebius.com/v1/")
     if not api_key or not base_url:
         raise HTTPException(
             status_code=503,

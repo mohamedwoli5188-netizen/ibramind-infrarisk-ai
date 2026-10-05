@@ -21,8 +21,8 @@ Copy `.env.example` to `.env` and provide your own credentials.
 
 ```bash
 NEBIUS_API_KEY=
-NEBIUS_BASE_URL=
-NVIDIA_MODEL=
+NEBIUS_BASE_URL=https://api.tokenfactory.nebius.com/v1/
+NVIDIA_MODEL=nvidia/Nemotron-3_5-Lightning
 ```
 
 ## Run locally
@@ -53,3 +53,14 @@ Public hackathon build in progress. The repository will be updated with the fina
 ## License
 
 MIT
+
+
+## NVIDIA model selected
+
+The hackathon build targets `nvidia/Nemotron-3_5-Lightning` through Nebius Token Factory's OpenAI-compatible endpoint. This model was selected for the first live evaluation because Nebius currently exposes it as a public Nemotron endpoint suited to efficient reasoning/coding-style tasks. The final Devpost quality ratings will be based only on measured hackathon runs, not assumptions.
+
+## API endpoint
+
+`https://api.tokenfactory.nebius.com/v1/`
+
+The API key is intentionally excluded from source control.
