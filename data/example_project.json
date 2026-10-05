@@ -1,0 +1,21 @@
+{
+  "project_name": "Synthetic Bridge Rehabilitation Package",
+  "project_context": "Public-infrastructure rehabilitation project. Evidence is synthetic and provided only for hackathon evaluation.",
+  "evidence": [
+    {
+      "id": "E-001",
+      "type": "site_diary",
+      "text": "Concrete repair activity was delayed for four days because access scaffolding was not available."
+    },
+    {
+      "id": "E-002",
+      "type": "schedule_note",
+      "text": "The deck repair activity is on the critical path with three days of remaining float."
+    },
+    {
+      "id": "E-003",
+      "type": "qa_record",
+      "text": "Two repair zones require re-inspection before the next coating activity can begin."
+    }
+  ]
+}
