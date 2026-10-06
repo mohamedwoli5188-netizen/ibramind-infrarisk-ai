@@ -1,0 +1,80 @@
+{
+  "project_id": "SYN-PROJECT-001",
+  "project_name": "Synthetic Community Facility",
+  "drawing": {
+    "id": "DRG-001",
+    "title": "Ground Floor Structural Plan",
+    "revision": "A",
+    "truth_state": "reviewed",
+    "evidence_ref": "EV-DRG-001"
+  },
+  "qto": [
+    {
+      "id": "QTO-001",
+      "source_id": "DRG-001",
+      "description": "C25 reinforced concrete",
+      "unit": "m3",
+      "quantity": 128.4,
+      "truth_state": "measured",
+      "evidence_ref": "EV-QTO-001"
+    },
+    {
+      "id": "QTO-002",
+      "source_id": "DRG-001",
+      "description": "High-yield reinforcement",
+      "unit": "kg",
+      "quantity": 18250,
+      "truth_state": "measured",
+      "evidence_ref": "EV-QTO-002"
+    }
+  ],
+  "boq": [
+    {
+      "id": "BOQ-101",
+      "qto_id": "QTO-001",
+      "description": "C25 reinforced concrete",
+      "unit": "m3",
+      "quantity": 130,
+      "rate": 11800,
+      "truth_state": "approved",
+      "evidence_ref": "EV-BOQ-101"
+    },
+    {
+      "id": "BOQ-102",
+      "qto_id": "QTO-002",
+      "description": "High-yield reinforcement",
+      "unit": "kg",
+      "quantity": 18500,
+      "rate": 145,
+      "truth_state": "approved",
+      "evidence_ref": "EV-BOQ-102"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "MEAS-201",
+      "boq_id": "BOQ-101",
+      "quantity": 52.5,
+      "truth_state": "reviewed",
+      "evidence_ref": "EV-MEAS-201"
+    },
+    {
+      "id": "MEAS-202",
+      "boq_id": "BOQ-102",
+      "quantity": 7400,
+      "truth_state": "reviewed",
+      "evidence_ref": "EV-MEAS-202"
+    }
+  ],
+  "commercial": [
+    {
+      "id": "IPC-301",
+      "measurement_ids": [
+        "MEAS-201",
+        "MEAS-202"
+      ],
+      "truth_state": "certified",
+      "evidence_ref": "EV-IPC-301"
+    }
+  ]
+}
