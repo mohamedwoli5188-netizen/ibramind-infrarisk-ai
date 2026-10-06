@@ -1,0 +1,105 @@
+{
+  "project_id": "SYN-INTEL-001",
+  "project_name": "Synthetic Regional Health Facility",
+  "records": [
+    {
+      "id": "BOQ-001",
+      "type": "boq_item",
+      "label": "C25 reinforced concrete",
+      "truth_state": "approved",
+      "evidence_refs": [
+        "EV-BOQ-001"
+      ]
+    },
+    {
+      "id": "MEAS-001",
+      "type": "measurement",
+      "label": "Concrete measured to date",
+      "truth_state": "reviewed",
+      "evidence_refs": [
+        "EV-MEAS-001",
+        "EV-SITE-014"
+      ]
+    },
+    {
+      "id": "IPC-001",
+      "type": "ipc",
+      "label": "Interim Payment Certificate 01",
+      "truth_state": "certified",
+      "evidence_refs": [
+        "EV-IPC-001"
+      ]
+    },
+    {
+      "id": "PAY-001",
+      "type": "payment",
+      "label": "Payment against IPC 01",
+      "truth_state": "paid",
+      "evidence_refs": [
+        "EV-PAY-001"
+      ]
+    },
+    {
+      "id": "VAR-001",
+      "type": "variation",
+      "label": "Foundation redesign variation",
+      "truth_state": "proposed",
+      "evidence_refs": [
+        "EV-RFI-009",
+        "EV-DWG-REV-B"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "BOQ-001",
+      "relation": "measured_by",
+      "to": "MEAS-001"
+    },
+    {
+      "from": "MEAS-001",
+      "relation": "certified_in",
+      "to": "IPC-001"
+    },
+    {
+      "from": "IPC-001",
+      "relation": "settled_by",
+      "to": "PAY-001"
+    },
+    {
+      "from": "VAR-001",
+      "relation": "may_impact",
+      "to": "BOQ-001"
+    },
+    {
+      "from": "VAR-001",
+      "relation": "may_impact",
+      "to": "IPC-001"
+    }
+  ],
+  "memory": [
+    {
+      "id": "MEM-001",
+      "lifecycle_state": "validated",
+      "authoritative": false,
+      "text": "Foundation excavation productivity falls when dewatering is active.",
+      "evidence_refs": [
+        "EV-SITE-014",
+        "EV-DIARY-022"
+      ]
+    }
+  ],
+  "scenario": {
+    "id": "SCN-001",
+    "mode": "non_persistent_scenario",
+    "authoritative": false,
+    "assumptions": {
+      "cost_change_percent": 6,
+      "inflation_change_percent": 2.5,
+      "schedule_delay_days": 14
+    },
+    "baseline_contract_value": 25000000,
+    "projected_final_cost": 27150000,
+    "note": "Synthetic illustration only. Does not alter BOQ, IPC, payment, forecast baseline, or approved records."
+  }
+}
