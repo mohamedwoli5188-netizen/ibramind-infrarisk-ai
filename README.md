@@ -42,6 +42,10 @@ A second bounded public demonstrator now shows the engineering-core flow from **
 
 See [showcases/qto_boq_digital_thread](showcases/qto_boq_digital_thread).
 
+A third bounded showcase demonstrates the **Project Intelligence** layer: truth-state summaries, evidence coverage, Digital Thread relationships, validated non-authoritative engineering memory, change-impact references, and non-persistent scenario analysis.
+
+See [showcases/project_intelligence](showcases/project_intelligence).
+
 ## Why it matters
 
 Infrastructure teams often make high-impact decisions from fragmented reports, site records, schedules, commercial evidence, and technical observations. InfraRisk demonstrates a bounded workflow that helps reviewers identify risk without inventing facts or hiding provenance.
