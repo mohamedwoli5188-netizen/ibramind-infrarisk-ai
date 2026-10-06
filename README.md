@@ -4,7 +4,37 @@
 
 IBRAMIND InfraRisk AI is a public, hackathon-specific prototype created for the Nebius × NVIDIA Global AI Hackathon 2026. It turns supplied engineering/project evidence into structured risk findings with traceable evidence IDs, confidence, recommended actions, and human-review checkpoints.
 
-> This repository is a public technical showcase. The production IBRAMIND Engineering Intelligence platform, customer data, enterprise controls, proprietary workflows, infrastructure, credentials, and private source code are not included.
+> This repository is a public technical showcase of one bounded IBRAMIND capability. The production IBRAMIND Engineering Intelligence platform, customer data, Founder OMNI, Customer OMNI, proprietary workflows, infrastructure, credentials, and private source code are not included.
+
+## IBRAMIND Engineering Intelligence
+
+IBRAMIND is being built as a connected engineering intelligence operating system for infrastructure delivery.
+
+The private platform spans engineering, BIM, quantity and commercial workflows, project controls, field intelligence, documents, procurement, risk, governance, and enterprise control. Its North-Star architecture connects these domains through governed project truth, evidence, relationships, impact analysis, memory, scenarios, and digital-twin views.
+
+A simplified public capability map is:
+
+```
+Drawings / BIM / Documents
+          ↓
+Engineering Graph / Digital Thread
+          ↓
+QTO → BOQ → Measurement → IPC
+          ↓
+Variation / Claim / Procurement / Cost
+          ↓
+Commercial & Project Intelligence
+          ↓
+Evidence → Truth State → Change Impact
+          ↓
+Connected Search → Engineering Memory → Scenarios
+          ↓
+Human Review / Governed Action
+```
+
+This repository demonstrates the **risk-intelligence** part of that wider architecture without publishing the private production implementation.
+
+See [IBRAMIND_PLATFORM.md](IBRAMIND_PLATFORM.md) for the safe public architecture overview.
 
 ## Why it matters
 
@@ -121,15 +151,15 @@ Public here:
 - Challenge-specific prototype code
 - Synthetic/anonymized data
 - Reproducible demo and benchmark artifacts
-- Public technical documentation
+- Safe architecture documentation
 
 Kept private:
 - IBRAMIND production platform
 - Customer/tenant information
+- Customer OMNI and Founder OMNI implementation
+- Project Truth, Digital Thread, Evidence Passport, Engineering Memory, Scenario Engine and Digital Twin production internals
 - Proprietary commercial and engineering workflows
-- Founder/owner control-plane logic
-- Production infrastructure and secrets
-- Enterprise integrations and governed deployment configuration
+- Production infrastructure, credentials and enterprise deployment configuration
 
 ## Hackathon integrity
 
@@ -145,4 +175,4 @@ Prototype source code is licensed under the [MIT License](LICENSE). IBRAMIND nam
 
 ---
 
-Built by **IBRAMIND Engineering Intelligence** — engineering intelligence for connected, governed, evidence-based infrastructure delivery.
+Built by **IBRAMIND Engineering Intelligence** — connected, governed, evidence-based engineering intelligence for infrastructure delivery.
