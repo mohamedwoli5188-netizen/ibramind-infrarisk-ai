@@ -36,6 +36,8 @@ This repository demonstrates the **risk-intelligence** part of that wider archit
 
 See [IBRAMIND_PLATFORM.md](IBRAMIND_PLATFORM.md) for the safe public architecture overview.
 
+**Start here:** [IBRAMIND Public Portfolio](PUBLIC_PORTFOLIO.md) — a single index connecting the engineering-core, Project Intelligence, InfraRisk, and BidBox public showcases.
+
 ## Additional public engineering showcase
 
 A second bounded public demonstrator now shows the engineering-core flow from **Drawing/BIM reference → QTO → BOQ → Measurement → Commercial record → Digital Thread → Evidence → Truth state** using synthetic data only.
