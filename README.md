@@ -36,6 +36,12 @@ This repository demonstrates the **risk-intelligence** part of that wider archit
 
 See [IBRAMIND_PLATFORM.md](IBRAMIND_PLATFORM.md) for the safe public architecture overview.
 
+## Additional public engineering showcase
+
+A second bounded public demonstrator now shows the engineering-core flow from **Drawing/BIM reference → QTO → BOQ → Measurement → Commercial record → Digital Thread → Evidence → Truth state** using synthetic data only.
+
+See [showcases/qto_boq_digital_thread](showcases/qto_boq_digital_thread).
+
 ## Why it matters
 
 Infrastructure teams often make high-impact decisions from fragmented reports, site records, schedules, commercial evidence, and technical observations. InfraRisk demonstrates a bounded workflow that helps reviewers identify risk without inventing facts or hiding provenance.
