@@ -44,6 +44,36 @@ Structured Findings + Provenance
 Human Review / Action
 ```
 
+## 30-second demo
+
+Use the included synthetic bridge-rehabilitation case:
+
+```bash
+cp .env.example .env
+# add your own NEBIUS_API_KEY
+uvicorn app:app --reload
+curl -X POST http://127.0.0.1:8000/analyze-risk \
+  -H 'Content-Type: application/json' \
+  -d @data/example_project.json
+```
+
+The sample evidence deliberately includes access-scaffolding delay, critical-path pressure, and QA re-inspection constraints. The API returns structured findings with severity, confidence, evidence IDs, rationale, and recommended action.
+
+```mermaid
+flowchart LR
+    A[Project evidence] --> B[Evidence validation]
+    B --> C[Risk analysis]
+    C --> D[Structured findings]
+    D --> E[Evidence provenance]
+    E --> F[Human review]
+```
+
+## Where this becomes commercial
+
+Typical paid-pilot scopes include one project or portfolio, a defined evidence set, a bounded risk taxonomy, agreed acceptance criteria, and a private review workflow. Success is measured using observable outputs such as schema validity, evidence-traceability, review completeness, response quality, and workflow fit — not unverified claims of engineering correctness.
+
+See [PILOT.md](PILOT.md) for a sample engagement structure.
+
 ## Required environment variables
 
 Copy `.env.example` to `.env` and provide your own credentials.
