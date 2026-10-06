@@ -2,6 +2,17 @@
 
 **Evidence-first infrastructure risk intelligence for engineering and project teams.**
 
+## Explore the public IBRAMIND portfolio
+
+- **Engineering Core:** QTO / BOQ + Digital Thread synthetic showcase
+- **Project Intelligence:** Truth + Evidence + Impact + Memory + Scenarios
+- **InfraRisk:** evidence-first infrastructure risk intelligence
+- **BidBox:** auditable tender-compliance intelligence
+
+Start here: [IBRAMIND Public Portfolio](PUBLIC_PORTFOLIO.md)
+
+BidBox repository: https://github.com/mohamedwoli5188-netizen/ibramind-bidbox-agent
+
 IBRAMIND InfraRisk AI is a public, hackathon-specific prototype created for the Nebius × NVIDIA Global AI Hackathon 2026. It turns supplied engineering/project evidence into structured risk findings with traceable evidence IDs, confidence, recommended actions, and human-review checkpoints.
 
 > This repository is a public technical showcase of one bounded IBRAMIND capability. The production IBRAMIND Engineering Intelligence platform, customer data, Founder OMNI, Customer OMNI, proprietary workflows, infrastructure, credentials, and private source code are not included.
